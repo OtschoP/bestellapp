@@ -4,4 +4,30 @@ body {
 
 #logo_img {
     width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#shop-description {
+    background-color: white;
+    width: 100%;
+    padding-left: 10px;
+
+    
+}
+
+#top {
+    background-image: url('./img/description-bg-img.jpg');
+    height: 300px;
+    background-size: cover; /* Passt das Bild an die Größe der Section an */
+    background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
+    background-position: center; /* Zentriert das Hintergrundbild */
+}
+
+#rahmen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
