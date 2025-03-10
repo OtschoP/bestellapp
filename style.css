@@ -1,3 +1,9 @@
+#max-width-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 body {
     background-color: orange;
 }
@@ -10,11 +16,25 @@ body {
 }
 
 #shop-description {
-    background-color: white;
-    width: 100%;
-    padding-left: 10px;
+    background-color: rgb(228, 223, 223);
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+}
 
-    
+#shop-description h1, p{
+    margin-left: 10px;
+}
+
+#categories {
+    display: flex;
+    background-color: rgb(159, 149, 149);
+    width: 100%;
+    gap: 30px;    
+}
+
+#categories h3{
+    margin-left: 10px;
 }
 
 #top {
@@ -23,11 +43,17 @@ body {
     background-size: cover; /* Passt das Bild an die Größe der Section an */
     background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
     background-position: center; /* Zentriert das Hintergrundbild */
+    max-width: 100%;
+    
 }
 
-#rahmen {
+#shop-border {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    max-width: 100%;
+    
 }
+
