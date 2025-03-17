@@ -3,6 +3,7 @@ let pastaList = document.getElementById('pasta_container');
 let saladList = document.getElementById('salad_container');
 let dessertList = document.getElementById('dessert_container');
 let drinksList = document.getElementById('drinks_container');
+let cartList = document.getElementById('cart_content');
 
 function init() {
 renderAll();
@@ -14,4 +15,8 @@ function renderAll(){
     renderSaladList();
     renderDessertList();
     renderDrinksList();
+}
+
+function addToBasket() {
+    renderCart();
 }

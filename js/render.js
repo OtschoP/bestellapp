@@ -58,3 +58,12 @@ function renderDrinksList() {
         }        
     }
 }
+
+function renderCart() {
+    cartList.innerHTML = "";
+
+    for (let index = 0; index < myDishes.length; index++) {
+        let cart = myDishes[index];
+        
+    }
+}
