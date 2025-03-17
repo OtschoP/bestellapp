@@ -1,14 +1,14 @@
 #cart {
-    position: absolute;
-    top: 86px; /* Abstand vom Header */
-    right: 0px;
-    width: 200px;
-    height: 100%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
     background-color: white;
     border: 1px solid #ccc;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    align-self: flex-end;
-    margin-left: 20px;
-    
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 350px;
+    height: auto;
 }
+
