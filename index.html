@@ -16,85 +16,77 @@
 
 
 
-<body>
+<body onload="init()">
     <div id="max-width-container">
-    <header>
-        <img src="./img/logo/Logo.png" id="logo_img" alt="">
-    </header>
-    <section id="top">
+        <header>
+            <img src="./img/logo/Logo.png" id="logo_img" alt="">
+        </header>
+        <section id="top">
             <div id="shop-description">
                 <h1>Ristorante Roma</h1>
                 <p>das leckerste Ristorante in der Gegend!</p>
             </div>
             <div id="categories" class="bg_grey">
-            <h3>Pizza</h3>
-            <h3>Pasta</h3>
-            <h3>Salate</h3>
-            <h3>Getränke</h3>
+                <h3>Pizza</h3>
+                <h3>Pasta</h3>
+                <h3>Salate</h3>
+                <h3>Getränke</h3>
             </div>
-            
-    </section>
-    <div id="main-and-cart">
-    <section id="main">
-        <div class="meal">   
-            <img src="./img/pizza.jpg" alt="" class="meal_img">
-            <h2 class="bg_grey no_margin">Pizza</h2>
-            <div id="pizza_container" class="white_bg">
-                <div class="add_container border">
-                    <div class="meal_description_container">
-                    <h2>Pizza Margherita</h2>
-                    <p class="meal_descrition">Leckere, vegetarische Pizza mit Käse und Tomatensauce</p>
-                    <p class="price">6.50 €</p>
-                </div>
-                    <p class="plus">+</p>
-                </div>
-                <div class="add_container border">
-                    <div class="meal_description_container">
-                    <h2>Pizza Vegetaria</h2>
-                    <p class="meal_descrition">Vegetarische Pizza belegt mit Gemüse der Saison</p>
-                    <p class="price">7.50 €</p>
-                </div>
-                    <p class="plus">+</p>
-                </div>
-            </div>
-        </div>
-        <div class="meal">   
-            <img src="./img/pasta.jpg" alt="" class="meal_img">
-            <h2 class="bg_grey no_margin">Pasta</h2>
-            <div id="pasta_container" class="white_bg">
-                <div class="add_container border">
-                    <div class="meal_description_container">
-                    <h2>Spaghetti Carbonara</h2>
-                    <p class="meal_descrition">Klassische Pasta mit Ei, Speck, Parmesan und Sahnesauce</p>
-                    <p class="price">9.00 €</p>
-                </div>
-                    <p class="plus">+</p>
-                </div>
-                <div class="add_container border">
-                    <div class="meal_description_container">
-                    <h2>Penne Arrabbiata</h2>
-                    <p class="meal_descrition">Scharfe Pasta mit Tomatensauce, Chili und Knoblauch</p>
-                    <p class="price">7.50 €</p>
-                </div>
-                    <p class="plus">+</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <div class="cart_container"></div>
-    <div id="cart">
-        <h3>Warenkorb</h3>
-        <div id="cart-content">
-            <p>Penne Arrabbiata - 7.50 €</p>
-<p>Cappuccino - 3.00 €</p>
-<p>Lasagne Bolognese - 8.50 €</p>
-<p>Minestrone Suppe - 4.50 €</p>
-<p>Caesar Salad - 5.50 €</p>
+        </section>
+        <div id="main-and-cart">
+            <section id="main">
+
+                <div class="meal">
+                    <img src="./img/pizza.jpg" alt="" class="meal_img">
+                    <h2 class="bg_grey no_margin">Pizza</h2>
+                    <div id="pizza_container" class="white_bg"></div>
+                </div>
+
+                <div class="meal">
+                    <img src="./img/pasta.jpg" alt="" class="meal_img">
+                    <h2 class="bg_grey no_margin">Pasta</h2>
+                    <div id="pasta_container" class="white_bg"></div>
+                </div>
+
+                <div class="meal">
+                    <img src="./img/salad.jpg" alt="" class="meal_img">
+                    <h2 class="bg_grey no_margin">Salate</h2>
+                    <div id="salad_container" class="white_bg"></div>
+                </div>
+
+                <div class="meal">
+                    <img src="./img/dessert.jpg" alt="" class="meal_img">
+                    <h2 class="bg_grey no_margin">Dessert</h2>
+                    <div id="dessert_container" class="white_bg"></div>
+                </div>
+
+                <div class="meal">
+                    <img src="./img/drinks.jpg" alt="" class="meal_img">
+                    <h2 class="bg_grey no_margin">Getränke</h2>
+                    <div id="drinks_container" class="white_bg"></div>
+                </div>
+
+
+
+
+
+
+
+            </section>
+            <div class="cart_container"></div>
+            <div id="cart">
+                <h3>Warenkorb</h3>
+                <div id="cart-content">
+                    <p>Penne Arrabbiata - 7.50 €</p>
+                    <p>Cappuccino - 3.00 €</p>
+                    <p>Lasagne Bolognese - 8.50 €</p>
+                    <p>Minestrone Suppe - 4.50 €</p>
+                    <p>Caesar Salad - 5.50 €</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
 
 
