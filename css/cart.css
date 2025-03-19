@@ -8,7 +8,29 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 10px;
     margin-top: 10px;
-    width: 350px;
+    width: 450px;
     height: auto;
 }
 
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.cart_mod {
+    display: flex;
+    
+    width: auto;
+}
+
+.cart_mod img{
+    height: 18px;
+}
