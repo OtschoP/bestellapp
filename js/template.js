@@ -22,7 +22,7 @@ function getCartContentTemplate() {
             <th></th>
         </tr>
         <tr>
-        <td>Pizza lecker!</td>
+        <td>Pizza lecker</td>
         <td>1</td>
         <td>11.00 €</td>
         </tr>        
