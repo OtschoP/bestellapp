@@ -19,6 +19,7 @@ function renderAll(){
 
 }
 
-function addToBasket() {
+function addToCart(index) {
+    cart.push(myDishes[index]);
     renderCart();
-  }
+            }

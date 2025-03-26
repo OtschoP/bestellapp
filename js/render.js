@@ -6,7 +6,7 @@ function renderPizzaList() {
         let currentPizza = myDishes[index];
 
         if (currentPizza.category === "pizza") {
-            pizzaList.innerHTML += getDishTemplate(currentPizza);
+            pizzaList.innerHTML += getDishTemplate(currentPizza, index);
         }
     }
 }
@@ -18,7 +18,7 @@ function renderPastaList() {
         let currentPasta = myDishes[index];
 
         if (currentPasta.category === "pasta") {
-            pastaList.innerHTML += getDishTemplate(currentPasta);
+            pastaList.innerHTML += getDishTemplate(currentPasta,index);
         }
     }
 }
@@ -30,7 +30,7 @@ function renderSaladList() {
         let currentSalad = myDishes[index];
 
         if (currentSalad.category === "salad"){
-            saladList.innerHTML += getDishTemplate(currentSalad);
+            saladList.innerHTML += getDishTemplate(currentSalad,index);
         }
     }
 }
@@ -42,7 +42,7 @@ function renderDessertList() {
         let currentDessert = myDishes[index];
 
         if (currentDessert.category === "dessert"){
-            dessertList.innerHTML += getDishTemplate(currentDessert);
+            dessertList.innerHTML += getDishTemplate(currentDessert,index);
         }        
     }
 }
@@ -54,13 +54,15 @@ function renderDrinksList() {
         let currentDrink = myDishes[index];
 
         if (currentDrink.category === "drinks"){
-            drinksList.innerHTML += getDishTemplate(currentDrink);  
+            drinksList.innerHTML += getDishTemplate(currentDrink,index);  
         }        
     }
 }
 
 function renderCart() { 
+
+
     cartContent.innerHTML = "";
 
-    cartContent.innerHTML += getCartContentTemplate();
+    cartContent.innerHTML += getCartContentTemplate(cart);
 }
