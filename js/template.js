@@ -30,7 +30,7 @@ function getCartContentTemplate(cart) {
             <td>${dish.name}</td>
             <td>1</td>
             <td>${dish.price} €</td>
-            <td></td>
+            <td class="cart_mod"><span class="add" onclick="addSame()">+</span> <span class="minus" onclick="minus()">-</span> <img class="delete" src="./img/delete.png" alt=""></td>
         </tr>`;
     }
 

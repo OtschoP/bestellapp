@@ -34,3 +34,29 @@ th {
 .cart_mod img{
     height: 18px;
 }
+.delete{
+    border: solid 1px transparent;
+}
+.delete:hover{
+    cursor: pointer;
+    border: solid rgb(228, 222, 222) 1px;
+}
+
+.add {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.minus {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.add:hover{
+    font-weight: bold;
+}
+
+.minus:hover {
+    font-weight: bold;
+}
+
