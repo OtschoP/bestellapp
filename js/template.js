@@ -23,13 +23,15 @@ function getCartContentTemplate(cart) {
         </tr>`;
 
     // Schleife über alle Einträge im Warenkorb
+    let total = 0;
     for (let i = 0; i < cart.length; i++) {
         let dish = cart[i];
+        total += dish.price * dish.quantity;
         html += `
         <tr>
             <td>${dish.name}</td>
-            <td>1</td>
-            <td>${dish.price} €</td>
+            <td>${dish.quantity}</td>
+            <td>${dish.price * dish.quantity} €</td>
             <td class="cart_mod"><span class="add" onclick="addSame()">+</span> <span class="minus" onclick="minus()">-</span> <img class="delete" src="./img/delete.png" alt=""></td>
         </tr>`;
     }
@@ -38,8 +40,8 @@ function getCartContentTemplate(cart) {
     html += `
         <tr>
             <td></td>
-            <td></td>
-            <td><strong>0 €</strong></td>
+            <td>Gesamt</td>
+            <td><strong>${total.toFixed(2)} €</strong></td>
             <td></td>
         </tr>
     </table>`;
