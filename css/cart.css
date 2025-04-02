@@ -25,10 +25,14 @@ th {
     padding: 8px;
 }
 
+.total_column{
+    min-width: 60px;
+}
+
 .cart_mod {
-    display: flex;
-    
-    width: auto;
+        min-width: 53px;
+        width: 53px;
+        height: auto;       
 }
 
 .cart_mod img{
@@ -44,12 +48,12 @@ th {
 
 .add {
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .minus {
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .add:hover{

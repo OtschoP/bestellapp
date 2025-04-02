@@ -51,7 +51,7 @@ function getCartContentTemplate(cart) {
         <tr>
             <td></td>
             <td>Gesamt</td>
-            <td><strong>${total.toFixed(2)} €</strong></td>
+            <td class="total_column"><strong>${total.toFixed(2)} €</strong></td>
             <td></td>
         </tr>
     </table>`;

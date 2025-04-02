@@ -25,7 +25,7 @@ let myDishes = [
     },
     {       
         "name": "Pizza Diavola",
-        "price": 8.90,
+        "price": 9.00,
         "description": "Scharfe Pizza mit würziger Peperoni-Salami, Tomatensauce und Käse",
         "category": "pizza"
     },
