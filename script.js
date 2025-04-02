@@ -7,15 +7,8 @@ let cartContent = document.getElementById('cart_content');
 let cart = [];
 
 function init() {
-renderAll();
+renderAllDishes();
 }
 
-function renderAll(){
-    renderPizzaList();
-    renderPastaList();
-    renderSaladList();
-    renderDessertList();
-    renderDrinksList();
 
-}
 

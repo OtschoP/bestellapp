@@ -1,4 +1,6 @@
 
+
+
 function addToCart(index) {
     let dish = myDishes[index];
     let existingDish = cart.find(element => element.name === dish.name);
