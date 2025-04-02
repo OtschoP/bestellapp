@@ -19,16 +19,3 @@ function renderAll(){
 
 }
 
-function addToCart(index) {
-    let dish = myDishes[index];
-    let existingDish = cart.find(element => element.name === dish.name);
-    if (existingDish) {
-        existingDish.quantity++;
-        renderCart();
-    }
-    else {
-    dish.quantity = 1;
-    cart.push(myDishes[index]);
-    renderCart();
-    }
-            }

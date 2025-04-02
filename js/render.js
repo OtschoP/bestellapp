@@ -59,6 +59,11 @@ function renderDrinksList() {
     }
 }
 
+function renderEmptyCart() {
+    cartContent.innerHTML = "";
+    cartContent.innerHTML += getEmptyCartContentTemplate(cart);
+}
+
 function renderCart() { 
 
 

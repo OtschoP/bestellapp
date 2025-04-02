@@ -12,6 +12,14 @@ function getDishTemplate(dish, index) {
     `
 };
 
+function getEmptyCartContentTemplate() {
+    return `<div id="cart_content">
+                    Dein Warenkorb ist leer
+                    
+                    
+                </div>`
+}
+
 function getCartContentTemplate(cart) {
     let html = `
     <table>
@@ -32,11 +40,13 @@ function getCartContentTemplate(cart) {
             <td>${dish.name}</td>
             <td>${dish.quantity}</td>
             <td>${dish.price * dish.quantity} €</td>
-            <td class="cart_mod"><span class="add" onclick="addSame()">+</span> <span class="minus" onclick="minus()">-</span> <img class="delete" src="./img/delete.png" alt=""></td>
+            <td class="cart_mod">
+            <span class="add" id="add_${i}" onclick="addCurrentItem(${i})">+</span> 
+            <span class="minus" id="minus_${i}" onclick="minusCurrentItem(${i})">-</span> 
+            <img class="delete" id="delete_${i}" src="./img/delete.png" onclick="deleteCurrentItem(${i})"></td>
         </tr>`;
     }
 
-    // Beispielhafte Gesamtsumme/Reihe
     html += `
         <tr>
             <td></td>
@@ -49,10 +59,3 @@ function getCartContentTemplate(cart) {
     return html;
 }
 
-function getCartSumTemplate(sum) {
-    return `
-    <td></td>
-    <td></td>
-    <td><strong>47.50 €</strong></td>
-    `
-}
