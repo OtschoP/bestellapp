@@ -71,7 +71,7 @@
 
             </section>
             <div class="cart_container"></div>
-            <div id="cart">
+            <div id="cart" class="cart">
                 <h3>Warenkorb</h3>
                 <div id="cart_content">
                     Dein Warenkorb ist leer
@@ -81,7 +81,10 @@
             </div>
         </div>
         <footer>
-            <button class="cart_button">Warenkorb</button>
+            <div class="cart_overlay_solid cart_overlay_hidden">
+                <h1 style="background-color: red;">Ein Testoverlay</h1>
+            </div>
+            <button class="cart_button" onclick="openOverlayCart()">Warenkorb</button>
             <a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Trash icons created by Freepik - Flaticon</a>
         </footer>
     </div>

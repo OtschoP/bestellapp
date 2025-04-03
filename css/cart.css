@@ -1,4 +1,4 @@
-#cart {
+.cart {
     position: sticky;
     top: 0;
     align-self: flex-start;
@@ -64,4 +64,13 @@ th {
     font-weight: bold;
 }
 
+.cart_overlay_solid {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
 
+.cart_overlay_hidden {
+    visibility: hidden;
+    opacity: 0;
+}
