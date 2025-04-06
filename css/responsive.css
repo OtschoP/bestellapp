@@ -23,8 +23,29 @@
     .cart_button{
         display: none;
     }
+    .cart_overlay{
+        display: none;
+    }
 }
 
+@media(max-width: 370px){
+    
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+.cart_overlay {
+    background-color: white;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Optional: Stellt sicher, dass das Overlay über anderen Elementen liegt */
+}
+}
 
 body .d_none{
     display: none;

@@ -4,6 +4,7 @@ let saladList = document.getElementById('salad_container');
 let dessertList = document.getElementById('dessert_container');
 let drinksList = document.getElementById('drinks_container');
 let cartContent = document.getElementById('cart_content'); 
+let cartContentOverlay = document.getElementById('cart_content_overlay');
 let cart = [];
 
 function init() {

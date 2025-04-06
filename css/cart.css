@@ -12,6 +12,14 @@
     height: auto;
 }
 
+.cart_overlay {
+    background-color: white;
+    position: fixed;
+    bottom: 40px;
+    left: 28px;
+    right: 28px;
+    z-index: 1000; /* Optional: Stellt sicher, dass das Overlay über anderen Elementen liegt */
+}
 table {
 
     border-collapse: collapse;

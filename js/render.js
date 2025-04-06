@@ -33,4 +33,6 @@ function renderEmptyCart() {
 function renderCart() {
     cartContent.innerHTML = "";
     cartContent.innerHTML += getCartContentTemplate(cart);
+    cartContentOverlay.innerHTML = "";
+    cartContentOverlay.innerHTML += getCartContentTemplate(cart);
 }
