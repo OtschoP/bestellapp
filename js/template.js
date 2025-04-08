@@ -54,8 +54,18 @@ function getCartContentTemplate(cart) {
             <td class="total_column"><strong>${total.toFixed(2)} €</strong></td>
             <td></td>
         </tr>
-    </table>`;
+    </table>
+    
+    <button class="order_button" onclick="orderCart()">Bestellen</button>
+    `;
 
     return html;
+}
+
+function getOrderedCartTemplate() {
+    return `
+    <h2>Deine Bestellung ist unterwegs</h2>
+    <button class="close_button" onclick="renderEmptyCart()">bestätigen</button>
+    `
 }
 

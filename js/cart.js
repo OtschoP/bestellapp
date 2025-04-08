@@ -43,3 +43,8 @@ function openOverlayCart() {
     let cart_overlay_solid = document.querySelector('.cart_overlay_solid');
     cart_overlay_solid.classList.toggle('cart_overlay_hidden');
 }
+
+function orderCart(){
+    renderOrderComplete()
+    
+}

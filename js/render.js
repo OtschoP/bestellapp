@@ -28,6 +28,7 @@ function renderAllDishes(){
 function renderEmptyCart() {
     cartContent.innerHTML = "";
     cartContent.innerHTML += getEmptyCartContentTemplate(cart);
+    cart = [];
 }
 
 function renderCart() {
@@ -35,4 +36,9 @@ function renderCart() {
     cartContent.innerHTML += getCartContentTemplate(cart);
     cartContentOverlay.innerHTML = "";
     cartContentOverlay.innerHTML += getCartContentTemplate(cart);
+}
+
+function renderOrderComplete(){
+    cartContent.innerHTML = "";
+    cartContent.innerHTML += getOrderedCartTemplate();
 }
