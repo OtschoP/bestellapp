@@ -44,6 +44,7 @@ background-color: #e5942e; /* etwas dunkler beim Hover */
     font-family: 'Avenir', sans-serif;
     font-size: 1rem;
     padding: 8px 16px;
+    margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 20px;
     cursor: pointer;
@@ -93,4 +94,9 @@ h2 {
 
 .border {
     border: 1px solid rgb(215, 208, 208);
+}
+
+.footer_logo {
+    
+    max-width: 100px;
 }

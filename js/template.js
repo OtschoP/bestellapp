@@ -14,7 +14,7 @@ function getDishTemplate(dish, index) {
 
 function getEmptyCartContentTemplate() {
     return `<div id="cart_content">
-                    Dein Warenkorb ist leer
+                    <p class="empty_tag">Dein Warenkorb ist leer</p>
                     
                     
                 </div>`
@@ -64,7 +64,7 @@ function getCartContentTemplate(cart) {
 
 function getOrderedCartTemplate() {
     return `
-    <h3>Deine Bestellung ist unterwegs</h3>
+    <h3 class="ordered_text">Deine Bestellung ist unterwegs</h3>
     <button class="close_button order_button" onclick="renderEmptyCart()">bestätigen</button>
     `
 }

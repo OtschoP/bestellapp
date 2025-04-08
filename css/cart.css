@@ -83,3 +83,8 @@ th {
     visibility: hidden;
     opacity: 0;
 }
+
+.empty_tag{
+    padding-bottom: 50px;
+    padding-left: 14px;
+}
