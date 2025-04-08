@@ -1,21 +1,58 @@
 html {
     scroll-behavior: smooth;
+    font-family: "Avenir", sans-serif;
 }
 
 #max-width-container {
-    
+
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-#main-and-cart{
-display: flex; 
+#main-and-cart {
+    display: flex;
 }
 
 body {
     background-color: orange;
+}
+
+button {
+    background-color: #f5a63c;
+    /* schönes Orange */
+    color: white;
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+background-color: #e5942e; /* etwas dunkler beim Hover */
+}
+
+.order_button {
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.order_button:hover {
+    background-color: #f0f0f0;
+    color: #000;
 }
 
 a {
@@ -23,7 +60,7 @@ a {
     color: black;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     color: rgb(54, 50, 50);
 }
@@ -32,15 +69,15 @@ a::after {
     color: black;
 }
 
-.bg_grey{
+.bg_grey {
     background-color: rgb(159, 149, 149);
-    
 }
-.no_margin{
+
+.no_margin {
     margin: 0;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
@@ -50,13 +87,9 @@ h2 {
     padding-bottom: 15px;
 }
 
-
-
-.white_bg{
+.white_bg {
     background-color: whitesmoke;
 }
-
-
 
 .border {
     border: 1px solid rgb(215, 208, 208);

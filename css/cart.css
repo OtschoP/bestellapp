@@ -13,12 +13,13 @@
 }
 
 .cart_overlay {
-    background-color: white;
+    background-color: rgb(193, 191, 191);
     position: fixed;
     bottom: 40px;
     left: 28px;
     right: 28px;
     z-index: 1000; /* Optional: Stellt sicher, dass das Overlay über anderen Elementen liegt */
+    border: 5px solid rgb(125, 125, 125);
 }
 table {
 
@@ -56,12 +57,12 @@ th {
 
 .add {
     cursor: pointer;
-    padding-right: 5px;
+    padding-right: 3px;
 }
 
 .minus {
     cursor: pointer;
-    padding-right: 5px;
+    padding-right: 3px;
 }
 
 .add:hover{
