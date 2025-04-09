@@ -34,6 +34,7 @@ function renderEmptyCart() {
 }
 
 function renderCart() {
+    calculate_cart();
     cartContent.innerHTML = "";
     cartContent.innerHTML += getCartContentTemplate(cart);
     cartContentOverlay.innerHTML = "";

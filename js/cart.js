@@ -1,5 +1,18 @@
 
+function calculate_cart() {
+    total_dish = 0;
+    delivery_costs = 5;
 
+    for (let i = 0; i < cart.length; i++) {
+        let dish = cart[i];
+        total_dish += dish.price * dish.quantity;
+
+        if (total_dish > 30) {
+            delivery_costs = 0;
+        }
+        total = total_dish + delivery_costs;
+    }
+}
 
 function addToCart(index) {
     let dish = myDishes[index];
@@ -9,19 +22,19 @@ function addToCart(index) {
         renderCart();
     }
     else {
-    dish.quantity = 1;
-    cart.push(myDishes[index]);
-    renderCart();
+        dish.quantity = 1;
+        cart.push(myDishes[index]);
+        renderCart();
     }
-            }
+}
 
-function addCurrentItem(i){
+function addCurrentItem(i) {
     cart[i].quantity++;
     renderCart();
 }
 
-function minusCurrentItem(i){
-    if (cart[i].quantity > 1){
+function minusCurrentItem(i) {
+    if (cart[i].quantity > 1) {
         cart[i].quantity--;
         renderCart();
     }
@@ -30,11 +43,12 @@ function minusCurrentItem(i){
     }
 }
 
-function deleteCurrentItem(i){
+function deleteCurrentItem(i) {
     cart.splice(i, 1);
-    if (cart.length === 0){
-    renderEmptyCart();}
-    else{
+    if (cart.length === 0) {
+        renderEmptyCart();
+    }
+    else {
         renderCart();
     }
 }
@@ -44,7 +58,6 @@ function openOverlayCart() {
     cart_overlay_solid.classList.toggle('cart_overlay_hidden');
 }
 
-function orderCart(){
+function orderCart() {
     renderOrderComplete()
-    
 }

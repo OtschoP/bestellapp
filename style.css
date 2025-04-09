@@ -4,7 +4,6 @@ html {
 }
 
 #max-width-container {
-
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
@@ -21,7 +20,6 @@ body {
 
 button {
     background-color: #f5a63c;
-    /* schönes Orange */
     color: white;
     font-family: 'Futura', 'Arial', sans-serif;
     font-weight: bold;
@@ -35,7 +33,7 @@ button {
 }
 
 button:hover{
-background-color: #e5942e; /* etwas dunkler beim Hover */
+background-color: #e5942e;
 }
 
 .order_button {
@@ -96,7 +94,6 @@ h2 {
     border: 1px solid rgb(215, 208, 208);
 }
 
-.footer_logo {
-    
+.footer_logo { 
     max-width: 100px;
 }

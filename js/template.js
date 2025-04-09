@@ -30,34 +30,37 @@ function getCartContentTemplate(cart) {
             <th></th>
         </tr>`;
 
-    // Schleife über alle Einträge im Warenkorb
-    let total = 0;
+    // Iteriere über das globale Array "cart"
     for (let i = 0; i < cart.length; i++) {
-        let dish = cart[i];
-        total += dish.price * dish.quantity;
+        let dish = cart[i]; // Hier wird das einzelne Gericht aus cart genommen.
         html += `
         <tr>
             <td>${dish.name}</td>
             <td>${dish.quantity}</td>
-            <td>${dish.price * dish.quantity} €</td>
+            <td>${(dish.price * dish.quantity).toFixed(2)} €</td>
             <td class="cart_mod">
-            <span class="add" id="add_${i}" onclick="addCurrentItem(${i})">+</span> 
-            <span class="minus" id="minus_${i}" onclick="minusCurrentItem(${i})">-</span> 
-            <img class="delete" id="delete_${i}" src="./img/delete.png" onclick="deleteCurrentItem(${i})"></td>
+                <span class="add" id="add_${i}" onclick="addCurrentItem(${i})">+</span> 
+                <span class="minus" id="minus_${i}" onclick="minusCurrentItem(${i})">-</span> 
+                <img class="delete" id="delete_${i}" src="./img/delete.png" onclick="deleteCurrentItem(${i})">
+            </td>
         </tr>`;
     }
 
     html += `
         <tr>
+            <td><strong>Lieferkosten</strong></td>
             <td></td>
-            <td>Gesamt</td>
+            <td class="total_column">${delivery_costs.toFixed(2)} €</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Gesamt</strong></td>
+            <td></td>
             <td class="total_column"><strong>${total.toFixed(2)} €</strong></td>
             <td></td>
         </tr>
     </table>
-    
-    <button class="order_button" onclick="orderCart()">Bestellen</button>
-    `;
+    <button class="order_button" onclick="orderCart()">Bestellen</button>`;
 
     return html;
 }

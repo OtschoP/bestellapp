@@ -1,5 +1,4 @@
 
-
 @media(max-width: 800px){
     #cart{
         display: none;
@@ -50,10 +49,9 @@ th {
     bottom: 40px;
     left: 0;
     right: 0;
-    z-index: 1000; /* Optional: Stellt sicher, dass das Overlay über anderen Elementen liegt */
+    z-index: 1000;
 }
 }
-
 
 body .d_none{
     display: none;

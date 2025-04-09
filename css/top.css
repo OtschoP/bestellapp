@@ -33,8 +33,8 @@
     justify-content: space-between;
     background-image: url(../img/description-bg-img.jpg);
     height: 400px;
-    background-size: cover; /* Passt das Bild an die Größe der Section an */
-    background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
-    background-position: center; /* Zentriert das Hintergrundbild */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     max-width: 100%;
 }
