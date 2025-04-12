@@ -10,6 +10,8 @@
     margin-top: 10px;
     width: 450px;
     height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .cart_overlay {
@@ -18,8 +20,10 @@
     bottom: 40px;
     left: 28px;
     right: 28px;
-    z-index: 1000; /* Optional: Stellt sicher, dass das Overlay über anderen Elementen liegt */
+    z-index: 1000; 
     border: 5px solid rgb(125, 125, 125);
+    max-height: 90vh;
+    overflow-y: auto;
 }
 table {
 
