@@ -25,6 +25,7 @@
     border: 5px solid rgb(125, 125, 125);
     max-height: 90vh;
     overflow-y: auto;
+    
 }
 table {
 
@@ -92,4 +93,22 @@ th {
 .empty_tag{
     padding-bottom: 50px;
     padding-left: 14px;
+}
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close_button:hover {
+    background-color: #c0392b;
 }
