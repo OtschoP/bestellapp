@@ -1,12 +1,11 @@
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
     #cart{
         display: none;
     }
-
 }
 
-@media(min-width: 801px){
+@media(min-width: 1001px){
     .cart_button{
         display: none;
     }
@@ -37,8 +36,7 @@
         font-size: 25px;
     }
     
-    td,
-th {
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 4px;
