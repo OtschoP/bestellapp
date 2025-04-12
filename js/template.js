@@ -68,7 +68,7 @@ function getCartContentTemplate(cart) {
 function getOrderedCartTemplate() {
     return `
     <h3 class="ordered_text">Deine Bestellung ist unterwegs</h3>
-    <button class="close_button order_button" onclick="renderEmptyCart()">bestätigen</button>
+    <button class="order_button" onclick="renderEmptyCart()">bestätigen</button>
     `
 }
 
