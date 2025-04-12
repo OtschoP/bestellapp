@@ -58,6 +58,7 @@ function openOverlayCart() {
     cart_overlay_solid.classList.toggle('cart_overlay_hidden');
 }
 
+
 function orderCart() {
     renderOrderComplete()
 }
